@@ -1,0 +1,12 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "js",
+    "javascript",
+    "jsx",
+    "html",
+    "typescript"
+  ],
+  "clangd.path": "/Users/sweetraare/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
+}
