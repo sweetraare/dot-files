@@ -35,6 +35,9 @@ Plug 'ap/vim-css-color'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'Badacadabra/vim-archery'
+Plug 'gilgigilgil/anderson.vim'
+Plug 'ajmwagar/vim-deus'
 
 " if exists('+termguicolors')
 "       let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -69,6 +72,9 @@ Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'stsewd/fzf-checkout.vim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Spotify
 Plug 'HendrikPetertje/vimify'
@@ -76,10 +82,15 @@ Plug 'HendrikPetertje/vimify'
 call plug#end()
 let g:spotify_token = "YWM5OGQ0Y2NhYzU3NDQ5MmI5NWM5OTJlN2I5ZDcxMzA6IDlhYTQ4YTcwM2UyMTQ2N2I5YmNhZDUyNzFhMmNkMWMy"
 
- colorscheme gruvbox
+" colorscheme nord
+" colorscheme gruvbox
+
+colorscheme deus
+set termguicolors
+
 " colorscheme cobalt2
-"let g:airline_theme = "deus"
-let g:airline_theme = "bubblegum"
+let g:airline_theme = "deus"
+" let g:airline_theme = "bubblegum"
 let g:gruvbox_contrast_dark = "hard"
 let NERDTreeQuitOnOpen=1
 let NERDTreeIgnore=['^node_modules']
@@ -154,6 +165,7 @@ function! s:show_documentation()
   endif
 endfunction
 " Prettier
+autocmd FileType scss setl iskeyword+=@-@
 autocmd BufWritePre *.* Neoformat
 
 " SNIPPETS
