@@ -11,5 +11,7 @@ let g:startify_custom_header = [
 let g:startify_bookmarks = [
 \ {'vim': '~/.vimrc'}, 
 \ {'zsh': '~/.zshrc'}, 
-\ {'h': '~/Documents/IQ\ Bit/projects/hydra/src'}
+\ {'h': '~/Documents/IQ\ Bit/projects/hydra/src'},
+\ {'s': '~/Documents/IQ\ Bit/smart-management/src'},
+\ {'r': '~/Documents/Develop/Learning/learning-redux/src'}
 \ ]

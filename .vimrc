@@ -36,11 +36,13 @@ so ~/.config/nvim/other-config.vim
 " colorscheme nord
 " colorscheme cobalt2
 
-" colorscheme gruvbox
-" let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_italic = '1'
 
-colorscheme deus
-set termguicolors
+colorscheme gruvbox
+
+" colorscheme deus
+" set termguicolors
 
 let g:airline_theme = "deus"
 " let g:airline_theme = "bubblegum"
@@ -65,4 +67,4 @@ so ~/.config/nvim/startify-config.vim
 so ~/.config/nvim/fzf-config.vim
 
 " for transparent Background
-so ~/.config/nvim/transparent-background.vim
+" so ~/.config/nvim/transparent-background.vim

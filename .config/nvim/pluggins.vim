@@ -37,6 +37,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'sbdchd/neoformat'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'andymass/vim-matchup'
 
 " File Managment
 Plug 'nvim-lua/popup.nvim'

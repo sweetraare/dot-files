@@ -11,6 +11,7 @@ nmap <Leader>gs :Cocsearch
 nmap <Leader>/ :Comment <CR>
 vmap <Leader>/ :Comment <CR>
 nmap <Leader>w :w<CR>
+nmap <Leader>tn :tabnew<CR>
 
 " coc.nvim config
 inoremap <silent><expr> <TAB>
