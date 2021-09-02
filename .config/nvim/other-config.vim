@@ -17,6 +17,17 @@ let g:user_emmet_settings = {
 
 autocmd FileType html,css,javascript,javascript.jsx EmmetInstall
 
+autocmd BufWritePre *.* Neoformat
+" autocmd BufWritePre *.* Prettier
+
+" Move lines
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+nnoremap <leader>k :m .-2<CR>== 
+nnoremap <leader>j :m .+1<CR>== 
+
 " MARKDOWN Preview
 
 let g:mkdp_echo_preview_url = 1
@@ -25,3 +36,15 @@ let g:mkdp_echo_preview_url = 1
 " these filetypes will have MarkdownPreview... commands
 let g:mkdp_filetypes = ['markdown']
 
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
+" Kite
+let g:kite_supported_languages= ['javascript', 'typescript', 'js', 'jsx', 'typescriptreact']
+
+" disable coc bc of Kite
+" autocmd FileType javascript let b:coc_suggest_disable = 1
+" autocmd FileType typescript let b:coc_suggest_disable = 1
+" autocmd FileType jsx let b:coc_suggest_disable = 1
+" autocmd FileType typescriptreact let b:coc_suggest_disable = 1
+
+autocmd FileType scss setl isKeyword+=@-@

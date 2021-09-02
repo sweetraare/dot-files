@@ -13,5 +13,5 @@ let g:startify_bookmarks = [
 \ {'zsh': '~/.zshrc'}, 
 \ {'h': '~/Documents/IQ\ Bit/projects/hydra/src'},
 \ {'s': '~/Documents/IQ\ Bit/smart-management/src'},
-\ {'r': '~/Documents/Develop/Learning/learning-redux/src'}
+\ {'m': '~/Documents/Develop/mind-talent-v2/index.html'}
 \ ]

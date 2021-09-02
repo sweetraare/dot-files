@@ -12,6 +12,9 @@ nmap <Leader>/ :Comment <CR>
 vmap <Leader>/ :Comment <CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>tn :tabnew<CR>
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 " coc.nvim config
 inoremap <silent><expr> <TAB>
@@ -70,3 +73,9 @@ nnoremap <leader>g :Rg<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
+" Kite
+if &filetype == "typescript" || &filetype == "javascript" || &filetype == "typescriptreact"
+  inoremap <c-space> <C-x><C-u>
+else 
+  inoremap <silent><expr> <c-space> coc#refresh()
+endif
