@@ -22,9 +22,11 @@ set autoindent
 set cindent
 set smartindent
 set backspace=indent
+set lazyredraw
+" set ignorecase
 
 let g:syntastic_auto_jump = 0
-filetype plugin indent on
+" filetype plugin indent on
 
 " Plugins
 so ~/.config/nvim/pluggins.vim
@@ -39,11 +41,15 @@ so ~/.config/nvim/other-config.vim
 let g:gruvbox_contrast_dark = "hard"
 let g:gruvbox_italic = '1'
 
+" colorscheme spaceduck
 colorscheme gruvbox
+" colorscheme embark
 
 " colorscheme deus
-" set termguicolors
+set termguicolors
 
+" let g:airline_theme= "spaceduck"
+" let g:airline_theme= "gruvbox"
 let g:airline_theme = "deus"
 " let g:airline_theme = "bubblegum"
 
@@ -57,14 +63,24 @@ so ~/.config/nvim/airline-config.vim
 so ~/.config/nvim/maps.vim
 
 " Prettier
-autocmd FileType scss setl iskeyword+=@-@
-autocmd BufWritePre *.* Neoformat
+" autocmd FileType scss setl iskeyword+=@-@
+" autocmd BufWritePre *.* Neoformat
 
-" STARTIFY 
+" STARTIFY
 so ~/.config/nvim/startify-config.vim
 
 " FZF
 so ~/.config/nvim/fzf-config.vim
+
+" ALE
+so ~/.config/nvim/ale-config.vim
+
+" LSP
+so ~/.config/nvim/lsp.vim
+
+" Tree Sitter
+" so ~/.config/nvim/tree-sitter.vim
+
 
 " for transparent Background
 " so ~/.config/nvim/transparent-background.vim
